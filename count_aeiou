@@ -1,0 +1,18 @@
+# “Write a Python program to count the frequency of vowels in a given string.”
+
+
+s = 'ranjeetkanojiya'
+
+v = 'aieouAIEOU'
+
+freq = {}
+
+for i in s:
+    if i in v:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i]  = 1
+
+print(freq) 
+        
