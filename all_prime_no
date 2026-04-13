@@ -1,0 +1,15 @@
+#Write a program to print all prime numbers between 1 and 100 using a for loop.
+
+for num in range(2, 100):
+    is_prime = True
+
+    for j in range(2, num):
+        if num % j == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(num)
+
+
+
